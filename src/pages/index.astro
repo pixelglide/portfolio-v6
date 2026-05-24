@@ -1,0 +1,88 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Portfolio">
+	<!-- Navbar -->
+	<div class="absolute top-0 right-0 flex flex-row p-2 m-2 md:p-4 md:m-4 rounded-full z-1 bg-background">
+		<a href="" class="font-merriweather font-bold text-lg md:text-2xl lg:text-4xl text-main mx-2 md:mx-4 hover:underline">projects</a>
+		<a href="https://www.linkedin.com/in/david-poole-compsci/" class="font-merriweather font-bold text-lg md:text-2xl lg:text-4xl text-main mx-2 md:mx-4 hover:underline">linkedin</a>
+		<a href="https://github.com/pixelglide" class="font-merriweather font-bold text-lg md:text-2xl lg:text-4xl text-main mx-2 md:mx-4 hover:underline">contact</a>
+	</div>
+
+	<!-- Hero -->
+	<div class="relative flex flex-col lg:h-screen w-screen justify-center pt-20 pb-10 px-6 md:p-12">
+		<h1 class="font-raleway font-bold text-4xl sm:text-6xl md:text-7xl lg:text-9xl py-4 text-main">hi there! i'm david_</h1>
+		<p class="font-merriweather font-normal text-lg sm:text-xl md:text-2xl lg:text-4xl leading-relaxed lg:leading-16 w-full md:w-3xl lg:w-5xl py-4 text-main">I'm an 18 yr old software engineer working on events and programs that get teens coding while completing the side quests in life.</p>
+		<svg class="hidden lg:block absolute bottom-10 left-1/2 -translate-x-1/2 w-15 h-15 text-gray-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+			<polyline points="6 9 12 15 18 9"/>
+		</svg>
+	</div>
+
+	<!-- Projects -->
+	<div class="lg:min-h-screen flex flex-col overflow-hidden py-8 lg:py-0">
+		<div class="flex flex-row justify-center">
+			<img src="images/homepage/coolashack_thumbnail.png" class="w-64 md:w-80 lg:w-120 h-fit grayscale-100 transition-all duration-250 ease-in hover:grayscale-0 mx-4 md:mx-8 lg:mx-12 shrink-0"/>
+			<img src="/images/homepage/campfire_thumbnail.png" class="w-64 md:w-80 lg:w-120 h-fit grayscale-100 transition-all duration-250 ease-in hover:grayscale-0 mx-4 md:mx-8 lg:mx-12 shrink-0"/>
+			<img src="/images/homepage/fusering_thumbnail.png" class="w-64 md:w-80 lg:w-120 h-fit grayscale-100 transition-all duration-250 ease-in hover:grayscale-0 mx-4 md:mx-8 lg:mx-12 shrink-0"/>
+			<img src="/public/images/homepage/deskshelf_thumbnail.png" class="w-64 md:w-80 lg:w-120 h-fit grayscale-100 transition-all duration-250 ease-in hover:grayscale-0 mx-4 md:mx-8 lg:mx-12 shrink-0"/>
+		</div>
+
+		<a href="https://github.com/pixelglide" class="flex flex-row items-center gap-2 md:gap-4 mt-8 lg:my-auto mx-4 md:mx-12 w-fit px-4 md:px-8 py-3 md:py-4 border-2 md:border-4 border-main font-bold font-merriweather text-xl md:text-3xl lg:text-5xl rounded-full duration-250 hover:shadow-2xl">view all projects<img src="/icons/ne_arrow.svg" class="w-5 h-5 md:w-7 md:h-7 lg:w-10 lg:h-10"/></a>
+
+	</div>
+
+	<!-- Experience & Qualifications -->
+	<div class="h-fit flex flex-col p-6 md:p-12 mb-8 md:mb-24">
+
+		<!-- Entries with divider -->
+		<div class="flex flex-col lg:flex-row gap-8">
+
+			<!-- Experience entries -->
+			<div class="flex flex-col lg:flex-3 gap-10 lg:gap-16">
+				<h2 class="font-raleway font-bold text-4xl md:text-5xl lg:text-7xl text-main">experience_</h2>
+				<div class="flex flex-col sm:flex-row gap-4 md:gap-8">
+					<div class="sm:w-44 md:w-52 shrink-0">
+						<p class="font-merriweather font-bold text-xl md:text-2xl text-main">Hack Club</p>
+						<p class="font-merriweather text-base md:text-lg text-main">may 2026 - present</p>
+					</div>
+					<div>
+						<h3 class="font-merriweather text-2xl md:text-3xl text-main mb-2 md:mb-3">Clubs Ambassador</h3>
+						<p class="font-merriweather font-normal text-base md:text-xl text-main leading-relaxed">Responsible for helping with club operations at Hack Club, helping match club leaders to workshops, and acting as their point of contact for any questions or requests they may have</p>
+					</div>
+				</div>
+
+				<div class="flex flex-col sm:flex-row gap-4 md:gap-8">
+					<div class="sm:w-44 md:w-52 shrink-0">
+						<p class="font-merriweather font-bold text-xl md:text-2xl text-main">Youthacks</p>
+						<p class="font-merriweather text-base md:text-lg text-main">march 2025 - present</p>
+					</div>
+					<div>
+						<h3 class="font-merriweather text-2xl md:text-3xl text-main mb-2 md:mb-3">Co-founder</h3>
+						<p class="font-merriweather font-normal text-base md:text-xl text-main leading-relaxed">Founded Youthacks to bring youth-led hackathons to the UK. Ran Cool as Hack with the support of RPIF, and Hello Hackathon in partnership with Ada, The National College for digital skills.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Divider (desktop only) -->
+			<div class="hidden lg:block w-1 bg-gray-300 self-stretch"></div>
+
+			<!-- Qualifications entries -->
+			<div class="flex flex-col lg:flex-2 gap-10 lg:gap-16 mt-4 lg:mt-0">
+				<h2 class="font-raleway font-bold text-4xl md:text-5xl lg:text-7xl text-main">qualifications_</h2>
+				<div>
+					<h3 class="font-merriweather font-bold text-2xl md:text-3xl text-main mb-2 md:mb-3">A-Levels</h3>
+					<p class="font-merriweather font-normal text-base md:text-xl text-main leading-relaxed">Studied Maths, Physics and Computer Science, alongside an EPQ titled <em>"AI and Machine Learning, A Detriment to the Right of Freedom of Expression?"</em></p>
+				</div>
+
+				<div>
+					<h3 class="font-merriweather font-bold text-2xl md:text-3xl text-main mb-2 md:mb-3">Level 3 First Aid at Work</h3>
+					<p class="font-merriweather font-normal text-base md:text-xl text-main leading-relaxed">Passed a 3-day course in First Aid at Work, covering a variety of topics including CPR, and how to deal with both major and minor injuries.</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</Layout>
